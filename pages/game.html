@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="btnGame">
+          <a href="../index.html" name="game" id="home">Home</a>
+        </button>
+        <button class="btnGame"><a href="">Reiniciar</a></button>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="game">
+        <div class="letrasDigitadas">
+          <p class="letras">Letras Digitadas:</p>
+          <div class="MsgLetraDigitadas"></div>
+        </div>
+
+        <p class="mostraChances">Chances:<span> 6</span></p>
+        <p class="msg"></p>
+
+        <!-- AREA DO DESENHO -->
+        <canvas class="canvas"></canvas>
+        <div class="boxResposta">
+          <div class="palavraSecreta"></div>
+          <!-- AREA PARA DIGITAR A LETRA ESCOLHIDA -->
+          <div class="chute">
+            <label for="letraDigitada">Digite uma Letra!</label>
+            <input
+              type="text"
+              name="letraDigitada"
+              id="letraDigitada"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../main.js" type="module"></script>
+  </body>
+</html>

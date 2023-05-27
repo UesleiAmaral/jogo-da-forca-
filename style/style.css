@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* INICIO STYLE CARD FRENTE */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+}
+
+nav{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+
+  border-bottom: 1px solid black;
+}
+
+#container,
+.container {
+  width: 90%;
+  margin: auto;
+
+}
+
+.front {
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#text {
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(4rem, 15vw, 2.5rem);
+}
+
+/* BOTÃO PARA INICIAR O JOGO */
+.btnJogar,
+.btnGame {
+  padding: .5rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: transparent;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  text-align: center;
+
+  cursor: pointer;
+}
+
+#btnFront:hover,
+.btnGame:hover {
+  transform: scale(1.1);
+
+  background-color: rgba(0, 255, 85, 0.295);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* LETRA ERRADAS DIGITADAS */
+.letras {
+  text-align: center;
+  
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  text-shadow: 0px 0px 14px whitesmoke;
+
+}
+
+.letrasDigitadas{
+display: flex;
+align-items: center;
+
+gap: 1rem;
+
+}
+
+.MsgLetraDigitadas {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  color: rgba(221, 3, 3, 0.973);
+  text-shadow: 0px 0px 14px rgba(253, 160, 245, 0.788);
+
+}
+
+/* CHACES */
+.mostraChances {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  ;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.973);
+
+}
+
+/* CANVAS BACK */
+.canvas {
+  width: 60%;
+  height: 50vh;
+  min-width: 300px;
+
+  border: 1px solid black;
+
+}
+
+.boxResposta{
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+/* EXIBE A MENSAGEM */
+.msg {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+/* EXIBE A PALAVRA SECRETA */
+.palavraSecreta {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+
+
+}
+
+/* LETRA SECRETA */
+.Letra_secreta {
+  width: 2rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin: 0 4px;
+
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.chute{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* INPUT PARA RECEBER AS LETRAS */
+#letraDigitada {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgb(0, 0, 0);
+
+}
+
+#letraDigitada::placeholder {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 100;
+  font-size: 1rem;
+
+
+}
+
+.erroCaractere {
+  color: red;
+  font-size: 1.4rem;
+
+}
+
+.msgGanhou{
+  color: rgb(0, 148, 25);
+  font-size: 1.6rem;
+  font-weight: bold;
+
+}
+
+
+.perdeuChances {
+  font-size: 1.4rem;
+  color: red;
+  font-weight: bold;
+}
+
+
+@media 
+  (max-width: 750px) {
+
+    .game{
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+}
