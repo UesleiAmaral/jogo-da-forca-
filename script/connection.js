@@ -1,4 +1,4 @@
-const url = 'http://127.0.0.1:5501';
+const url = 'https://uesleiamaral.github.io/jogo-da-forca-/db.json';
 
 export const db = async () => {
   const endpoint = `${url}/db.json`;
