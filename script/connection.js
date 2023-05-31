@@ -1,4 +1,4 @@
-const url = 'https://jogo-da-forca-gules-ten.vercel.app/db.json';
+const url = 'https://jogo-da-forca-gules-ten.vercel.app/';
 
 export const db = async () => {
   const endpoint = `${url}/db.json`;
