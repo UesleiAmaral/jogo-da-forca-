@@ -1,4 +1,4 @@
-const url = 'https://uesleiamaral.github.io/jogo-da-forca-/db.json';
+const url = 'https://jogo-da-forca-gules-ten.vercel.app/db.json';
 
 export const db = async () => {
   const endpoint = `${url}/db.json`;
