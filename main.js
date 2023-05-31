@@ -1,3 +1,3 @@
-import { Game } from "./script/Game.js";
+import { Game } from "./script/game.js";
 
 new Game();
